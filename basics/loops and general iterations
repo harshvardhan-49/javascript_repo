@@ -1,0 +1,63 @@
+1) Difference b/w filter and map method 
+
+filter is used when you want to select specific elements from an array based on a condition.  if element satisfy the condition then only it will be included in new array 
+
+ 
+
+map is used when you want to transform each element of an array and create a new array with the transformed values. 
+
+ 
+
+Both methods do not modify the original array; they return new arrays with the results of the filtering or mapping operations. It's important to note that both methods work with the concept of callbacks, allowing you to define custom logic for filtering or transforming the elements. 
+
+ 
+
+2) What are call back functions? 
+
+Basic :- A function is passed inside another function. 
+
+                    For eg:-   .forEach(( ) => {  }  )   , .filter( ) , .Map( ) 
+
+Inside (  )   write either function  definition or create a separate function and give its reference don’t execute it.  function w/o name if u are initializing it in (  ) 
+
+ 
+
+ 
+
+3) CHAINING 
+
+const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+  
+
+ const newNums = myNumers.map( (num) => { return num + 10}) 
+
+  
+
+const newNums = myNumers 
+
+                .map((num) => num * 10 ) 
+
+                .map( (num) => num + 1) 
+
+                .filter( (num) => num >= 40) 
+
+  
+
+console.log(newNums); 
+
+ After every method values will be changed and whatever the next method is going to perform will be done to new values 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
